@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="stylesheet" href="default.css">
+  <!-- <link rel="stylesheet" href="style.css"> -->
+  <link rel="stylesheet" href="destination.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bellefair&display=swap" rel="stylesheet"> 
+  <script defer src="app.js"></script>
+  <script defer src="index.js"></script>
+
+  <title>Frontend Mentor | Space tourism website</title>
+</head>
+<body>
+<div class="container">
+  <nav class="nav" id="nav">
+    <div class="hero">
+      <img src="assets/shared/logo.svg" alt="">
+    </div>
+     <div class="lists">
+       <img src="assets/shared/icon-close.svg" alt="" class="close-btn">
+      <ul class="nav-list">
+        <li class="nav-item">
+          <a href="index.html" class="nav-link "> <span class="num">00</span> Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="destination.html" class="nav-link active">  <span class="num">01</span>Destination</a>
+        </li>
+        <li class="nav-item">
+          <a href="crew.html" class="nav-link"> <span class="num">02</span>Crew</a>
+        </li>
+        <li class="nav-item">
+          <a href="technology.html" class="nav-link">  <span class="num">03</span>Technology</a>
+        </li>
+      </ul>
+    </div>
+    
+     <img src="assets/shared/icon-hamburger.svg" alt="" class="hamburger">
+
+</nav>
+<main id="main">
+      <div class="planet-img-detail">
+            <div>
+                  <h1><span class="numb">01</span> Pick your destination</h1>
+            </div>
+            <div>
+                  <picture class="picture">
+                        <source srcset="assets/destination/image-moon.webp" type="image/webp">
+                        <img src="assets/destination/image-moon.png" alt="the moon">
+                  </picture>
+            </div>
+      </div>
+      <div class="planet-info-detail">
+            <div class="planet-nav">
+                  <h1 class="planet-nav-item show">Moon</h1>
+                  <h1 class="planet-nav-item">Mars</h1>
+                  <h1 class="planet-nav-item">Euporia</h1>
+                  <h1 class="planet-nav-item">Titan</h1>
+            </div>
+            <div class="planet-info-note">
+                  <h1 class="planet-name">Moon</h1>
+
+                  <p class="planet-info">See our planet as you've never seen it before. A perfect relaxing trip away to help regain perspective and come back refreshed. While you're there, take in some history by visiting the Luna 2 and Apollo 11 landing sites.</p>
+
+            </div>
+            <div class="calc">
+                  <div class="dist">
+                        <h1>
+                              <span class="span">avg. distance</span>
+                               <span class="distance">384,400 km </span> 
+                        </h1>
+                  </div>
+                  <div class="time">
+                        <h1>
+                              <span class="span">est. travel time</span>
+                              <span class="times">3 days</span> 
+                        </h1>
+                        </h1>
+                  </div>
+            </div>
+      </div>
+</main>
+</div>
+</body>
+</html>

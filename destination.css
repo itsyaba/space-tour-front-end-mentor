@@ -1,0 +1,223 @@
+:root{
+      --black:rgb(11, 13 , 23);
+      --primary:rgb(208 , 214 , 249);
+      --white:rgb(255 , 255 , 255);
+      --main-font:'Bellefair', serif;
+      --secondary-font:'Barlow Condensed', sans-serif;
+      --transition: all 0.3s ease;
+      --margin-left: 40px;
+}
+
+*{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+
+}
+
+
+.container{
+      height: 100vh;
+      background: url('assets/destination/background-destination-desktop.jpg') ;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      color: var(--white);
+      overflow: hidden;      
+}
+
+
+@media (max-width:900px){
+      .container{
+            background: url('assets/destination/background-destination-tablet.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+      }
+
+}
+
+@media (max-width:510px){
+      .container{
+            background: url('assets/destination/background-destination-mobile.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            overflow: hidden;      
+
+      }
+      
+}
+
+picture img{
+      animation: rotation 16s infinite linear;
+}
+
+@keyframes rotation {
+
+       from {
+          transform: rotate(0deg);
+  }
+      to {
+
+            transform: rotate(359deg);
+  }
+}
+
+#main{
+      height: 90vh;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      margin: -75px 50px 0px 100px;
+}
+
+.planet-img-detail{
+      margin-right: 50px;
+}
+
+.planet-img-detail h1{
+      text-transform: uppercase;
+      font-family: var(--secondary-font);
+      letter-spacing: 5px;
+      font-weight: 400;
+      margin-bottom: 40px;
+}
+
+.planet-img-detail span{
+      color:rgba(255, 255, 255, 0.315);
+      font-weight: 900;
+}
+
+.planet-info-detail{
+      /* background-color: red; */
+      margin-right: 20px;
+}
+
+.planet-nav{
+      display: flex;
+      align-items: flex-end;
+      justify-content:space-between;
+      width: 285px;
+      
+}
+
+.planet-nav h1{
+      font-family: var(--secondary-font);
+      font-size: 19px;  
+      text-transform: uppercase;
+      font-weight: 100;
+      margin: 0 2px;
+      cursor: pointer;
+      padding-bottom: 5px;
+      border: 2px solid transparent;
+}
+
+.planet-nav h1.show , .planet-nav h1:hover{
+      border-bottom: 2px solid var(--primary);
+
+}
+
+.planet-info-note h1{
+      font-family: var(--main-font);
+      text-transform: uppercase;
+      margin: 20px 0;
+      font-size: 100px;
+      font-weight: 700;
+}
+
+.planet-info-note p{
+      font-size: 22px;
+      line-height: 32px;
+      white-space: 30px;
+      letter-spacing: 1px;
+      margin-bottom: 40px;
+      padding-bottom: 40px;
+      border-bottom: 1px solid var(--primary);
+      margin: 32px 0 40px 0;
+}
+
+.calc{
+      display: flex;
+      align-items: center;
+      justify-content: left;
+
+}
+
+.calc .dist{
+      margin-right: 70px;
+}
+
+.calc h1{
+      font-family: var(--main-font);
+      text-transform: uppercase;      
+      font-weight: 400;
+}
+
+.calc .span{
+      display: block;
+      font-size: 14px;
+      font-family: var(--secondary-font);
+      letter-spacing: 2.3px;
+      line-height: 30px;
+}
+
+@media (max-width:1000px)  {
+      .container{
+            overflow-y: auto;
+      }
+
+
+      #main{
+            text-align: center;
+            flex-direction: column;
+            height: 100vh;
+            margin-top: 60px;
+            margin-left: 0;
+            margin-inline: auto;            
+            width: 90%;
+      }
+
+      picture img{
+            width: 300px;
+            margin-left: 120px;
+            
+      }
+
+      .planet-info-detail{
+            margin: 0 auto;
+      }
+
+      .planet-nav{
+            margin: 0 auto;
+      }
+
+      .planet-info-note p{
+            font-size: 20px;
+            line-height: 25px;
+            letter-spacing: 0;
+            width: 89%;
+            margin-left: auto;
+            margin-right: auto;
+            
+      }
+
+      .calc{
+            justify-content: center;
+      }
+}
+
+@media (max-width:505px){
+      .calc{
+            flex-direction: column;
+            margin-bottom: 40px;
+            justify-content: space-between;
+      }
+
+      .calc .dist{
+            margin-right: 0px;
+
+      }
+
+      .calc .span{
+            margin-top: 10px;
+      }
+}

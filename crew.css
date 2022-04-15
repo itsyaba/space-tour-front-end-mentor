@@ -1,0 +1,152 @@
+:root{
+      --black:rgb(11, 13 , 23);
+      --primary:rgb(208 , 214 , 249);
+      --white:rgb(255 , 255 , 255);
+      --soft-black: #979797;
+      --main-font:'Bellefair', serif;
+      --secondary-font:'Barlow Condensed', sans-serif;
+      --transition: all 0.3s ease;
+      --margin-left: 40px;
+}
+
+*{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+
+}
+
+
+.container{
+      height: 100vh;
+      background: url('assets/crew/background-crew-desktop.jpg') ;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      color: var(--white);
+      overflow: hidden;      
+}
+
+
+@media (max-width:900px){
+      .container{
+            background: url('assets/crew/background-crew-tablet.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+      }
+
+}
+
+@media (max-width:510px){
+      .container{
+            background: url('assets/crew/background-crew-mobile.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            overflow: hidden;      
+      }
+}
+
+#main{
+      display: flex;
+      align-items: flex-end;
+      height: 88vh;
+      margin: 0 10px 0 90px;
+}
+
+.crew-notes{
+      justify-self: center;
+      height: 70%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin: 100px 0;
+}
+
+.meet{
+      font-family: var(--secondary-font);
+      font-weight: 200;
+      text-transform: uppercase;
+}
+
+.meet span{
+      color: var(--soft-black);
+      font-weight: 900;
+      letter-spacing: 2px;
+}
+
+.crew-detail{
+      width: 80%;
+}
+
+.crew-detail .jobs{
+      font-family: var(--main-font);
+      color: var(--soft-black);
+      text-transform: uppercase;
+      margin-bottom: 15px;
+      font-weight: 400;
+      font-size: 32px;
+}
+
+.crew-detail .crew-name{
+      text-transform: uppercase;
+      font-family: var(--main-font);
+      font-weight: 400;
+      font-size: 56px;
+      margin-bottom: 10px;
+}
+
+.crew-detail .crew-about{
+      font-family: var(--secondary-font);
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 30px;
+
+}
+
+.crew-nav div{
+      display: inline-block;
+      width: 15px;
+      height: 15px;
+      background-color: #494646;
+      border-radius: 50%;
+      margin-right: 8px;
+      cursor: pointer;
+}
+
+.crew-nav div:hover , .crew-nav div.bold{
+      background-color: white;
+}
+
+@media (max-width:1000px){
+      .meet{
+            text-align: left;
+            margin-bottom: 15px;
+      }
+
+      #main{
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-top: 80px;
+      }
+
+      .crew-notes{
+            text-align: center;
+            margin-top: 90px;
+      }
+
+      .crew-detail{
+            width: 90%;
+            margin-top: 40px;
+      }
+
+      
+
+      .crew-detail .crew-name{
+            font-size: 40px;
+      }
+
+      .crew-nav{
+            padding: 30px 10px 0 10px;
+      }
+}
